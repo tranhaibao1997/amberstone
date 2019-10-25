@@ -1,0 +1,658 @@
+        @import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            background-color: #222121 !important;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1200px 1300px 800px 1060px 900px 400px;
+            grid-template-areas: "intro" "brands" "concepts" "news" "contact" "footer";
+            font-family: 'Josefin Sans', sans-serif;
+        }
+        
+        .container-fluid {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
+        
+        .noidungto {
+            background-color: #3c160e;
+            height: 4500px;
+            z-index: 11;
+            position: fixed;
+            width: 344px;
+            transition: 0.4s;
+        }
+        
+        .close-menu-btn {
+            background-color: #3c160e;
+            color: white;
+            font-size: 30px;
+            margin-top: 30px;
+            float: right;
+            margin-right: 30px;
+            border: none;
+        }
+        
+        .left-menu {
+            transition: 0.4s;
+            margin-top: 132px;
+        }
+        
+        .noidungto.vetrai {
+            transform: translateX(-100%);
+        }
+        
+        .left-menu>ul>li {
+            /* background: none; */
+            /* color: white; */
+            text-transform: uppercase;
+            /* position: fixed; */
+            font-size: 20px;
+            background-color: #3c160e;
+            color: white;
+            font-style: oblique;
+        }
+        
+        a {
+            color: white !important;
+            transition: 0.4s;
+        }
+        
+        .intro {
+            grid-area: intro;
+            background-image: url(img/Rectangle71.png);
+            background-repeat: no-repeat;
+            width: 100%;
+            background-position: center top -200px;
+            position: relative;
+            background-size: cover;
+            object-fit: contain;
+        }
+        
+        .header {
+            height: 150px;
+            width: 100%;
+            position: relative;
+        }
+        
+        .header>.logo {
+            position: absolute;
+            left: 100px;
+        }
+        
+        .header-link>ul {
+            list-style: none;
+            font-size: 20px;
+            color: white;
+            float: right;
+            padding: 80px 70px;
+        }
+        
+        .header-link>ul>li {
+            float: left;
+            margin-left: 20px;
+        }
+        
+        .header-link>ul>li:hover {
+            cursor: pointer;
+            font-size: 25px;
+            transition: 0.3s;
+        }
+        
+        #music-empower {
+            font-size: 80px;
+            text-align: center;
+            color: white;
+            padding-top: 200px;
+        }
+        
+        #intro-img {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            display: table-cell;
+            vertical-align: middle;
+            width: 75%
+        }
+        
+        .intro-text {
+            color: white;
+            height: 250px;
+            background-color: #3c160e;
+            position: absolute;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+        
+        .intro-text>.text {
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+        }
+        
+        .left {
+            width: 30%;
+            text-align: right;
+            margin-right: 40px;
+        }
+        
+        .right {
+            width: 30%;
+        }
+        
+        .our-brand {
+            grid-area: brands;
+            background: #222121;
+            position: relative;
+        }
+        
+        .our-brand-banner {
+            height: 180px;
+            background-image: url(img/Group-230.jpg);
+            background-repeat: no-repeat;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-position: center;
+            background-size: cover;
+        }
+        
+        .our-brand-banner>p {
+            font-size: 50px;
+            color: white;
+        }
+        
+        .our-brand-content {
+            height: 796px;
+            width: 1400px;
+            border-right: 1px solid white;
+            border-left: 1px solid white;
+            margin: 0 auto;
+            transform: translateY(-72px);
+        }
+        
+        .our-brand-logos {
+            display: flex;
+            flex-direction: row;
+            margin-right: 40px;
+            margin-left: 55px;
+            flex-wrap: wrap;
+        }
+        
+        .our-brand-logos>div {
+            width: 400px;
+            height: 300px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding-bottom: 40px;
+            position: relative;
+        }
+        
+        .our-brand-logos>img {
+            padding-top: 50px;
+            padding-left: 50px;
+        }
+        
+        .our-brand-logos>div:nth-child(1) {
+            margin-top: 150px;
+            border-bottom: 1px solid white;
+            border-right: 1px solid white;
+        }
+        
+        .our-brand-logos>div:nth-child(2) {
+            margin-top: 150px;
+            border-bottom: 1px solid white;
+            border-right: 1px solid white;
+        }
+        
+        .our-brand-logos>div:nth-child(2)>img {
+            position: absolute;
+            right: 16%;
+            top: 37%;
+        }
+        
+        .our-brand-logos>div:nth-child(3) {
+            margin-top: 150px;
+            border-bottom: 1px solid white
+        }
+        
+        .our-brand-logos>div:nth-child(3)>img {
+            position: absolute;
+            right: 22%;
+            top: 37%;
+        }
+        
+        .our-brand-logos>div:nth-child(4) {
+            border-right: 1px solid white;
+        }
+        
+        .our-brand-logos>div:nth-child(4)>img {
+            position: absolute;
+            right: 10%;
+            top: 37%;
+        }
+        
+        .our-brand-logos>div:nth-child(5) {
+            border-right: 1px solid white;
+        }
+        
+        .our-brand-logos>div:nth-child(5)>img {
+            position: absolute;
+            right: 25%;
+            top: 44%;
+        }
+        
+        .our-brand-logos>div:nth-child(6)>img {
+            position: absolute;
+            right: 24%;
+            top: 44%;
+        }
+        
+        .our-brand-content>p {
+            font-size: 20px;
+            /* text-align: -webkit-right; */
+            text-align: center;
+            color: white
+        }
+        
+        .our-brand-content>p::before,
+        .our-brand-content>p::after {
+            display: inline-block;
+            content: "";
+            border-top: 2px solid white;
+            width: 4rem;
+            margin: 0 1rem;
+            transform: translateY(-0.3rem);
+        }
+        
+        .Instruments {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .Instrument {
+            width: 420px;
+            height: 150px;
+            border: 1px solid white;
+            position: relative;
+            display: flex;
+            color: white;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .Instrument>img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .Instrument>p {
+            position: absolute;
+            font-size: 24px;
+            margin: 0;
+        }
+        
+        .Instrument:hover {
+            cursor: pointer;
+        }
+        
+        .our-concept {
+            grid-area: concepts;
+            position: relative;
+        }
+        
+        .our-concept-banner>p {
+            font-size: 50px;
+            color: white;
+        }
+        
+        .our-concept-banner {
+            height: 180px;
+            background-image: url(img/Group\ 237.png);
+            background-repeat: no-repeat;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-position: center;
+            background-size: cover;
+        }
+        
+        .our-concept-content {
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            width: 100%;
+            top: 142px;
+        }
+        
+        .content1 {
+            padding-top: 100px;
+            position: relative;
+            width: 630px;
+            height: 550px;
+            background-image: url(img/Group\ 247.png);
+            margin-right: 122px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border: 1px solid white;
+            text-align: center;
+            color: white;
+        }
+        
+        .content2 {
+            width: 630px;
+            height: 550px;
+            background-image: url(img/Rectangle\ 85.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            border: 1px solid white;
+            text-align: center;
+        }
+        
+        .content1>h3 {
+            font-size: 44px;
+            opacity: 0.5;
+        }
+        
+        .content1>p {
+            font-size: 20px;
+            width: 80%;
+            position: absolute;
+            right: 70px;
+            opacity: 0.5;
+        }
+        
+        .content1>img {
+            text-align: center;
+            margin: 0 auto;
+            margin-top: 209px;
+            opacity: 0.5;
+        }
+        
+        .content2>h3 {
+            color: white;
+            font-size: 44px;
+            text-align: center;
+            padding-top: 169px;
+            opacity: 0.8;
+        }
+        
+        .content2>img {
+            opacity: 0.8;
+        }
+        
+        .news-and-events {
+            grid-area: news
+        }
+        
+        .news-and-events-banner {
+            height: 180px;
+            background-image: url(img/Group\ 371.png);
+            background-repeat: no-repeat;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-position: center;
+            background-size: cover;
+        }
+        
+        .news-and-events-banner>p {
+            font-size: 50px;
+            color: white;
+        }
+        
+        .news-and-events-content {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 75px;
+        }
+        
+        .news-and-events-content>.card {
+            text-align: center;
+            color: white;
+            margin-right: 3%;
+            background-color: #222121
+        }
+        
+        .news-and-events-content>.card>.info {
+            width: 55%;
+            display: block;
+            margin: 0 auto;
+        }
+        
+        .news-and-events>a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 81px;
+            text-decoration: none;
+        }
+        
+        #see-all-event {
+            margin: 0 auto;
+            width: 10%;
+            height: 43px;
+            border: none;
+            border-top: 1px white;
+            background-color: #222121;
+            margin: 0 auto;
+            width: 200px;
+            height: 59px;
+            border-top: 2px solid white;
+            background-color: #222121;
+            border-bottom: 2px solid white;
+            border-right: none;
+            border-left: none;
+            font-size: 20px;
+            color: white;
+        }
+        
+        .contact-us {
+            grid-area: contact
+        }
+        
+        .contact-us-banner {
+            height: 180px;
+            background-image: url(img/Group\ 371.png);
+            background-repeat: no-repeat;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-position: center;
+            background-size: cover;
+        }
+        
+        .contact-us-banner>p {
+            font-size: 50px;
+            color: white;
+        }
+        
+        .contact-us-content {
+            height: 720px;
+            background-color: #3c160e;
+        }
+        
+        .contact-us-content>.border {
+            width: 1400px;
+            height: 700px;
+            margin: 0 auto;
+            border-right: 1px solid white;
+            border-left: 1px solid white;
+            transform: translateY(-80px);
+            border-top: none !important;
+            border-bottom: none !important;
+        }
+        
+        .contact-us-text {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 120px 200px;
+            width: 1000px;
+            margin: auto;
+            padding-top: 146px;
+            padding-bottom: 30px;
+            color: white;
+            grid-template-areas: "text1 text1" "text2 text3"
+        }
+        
+        .contact-us-text>.text1 {
+            grid-area: text1;
+            text-align: center;
+        }
+        
+        .contact-us-text>.text2 {
+            grid-area: text2;
+            text-align: left;
+        }
+        
+        .contact-us-text>.text3 {
+            grid-area: text3;
+            text-align: right;
+        }
+        
+        .contact-us-text>.text2>div {
+            width: 100px;
+            height: 30px;
+            border-top: 1px solid;
+        }
+        
+        .contact-us-text>.text3>div {
+            width: 100px;
+            height: 30px;
+            border-top: 1px solid;
+            transform: translateX(400px)
+        }
+        
+        .contact-us-content>.border>a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 81px;
+            text-decoration: none;
+        }
+        
+        #Book-Now {
+            margin: 0 auto;
+            width: 100px;
+            height: 43px;
+            border: none;
+            border-top: 1px white;
+            background-color: #3c160e;
+            margin: 0 auto;
+            width: 17%;
+            height: 59px;
+            border-top: 2px solid white;
+            background-color: #3c160e;
+            border-bottom: 2px solid white;
+            border-right: none;
+            border-left: none;
+            font-size: 20px;
+            color: white;
+        }
+        
+        .add-arrow::after {
+            content: "\f178";
+            font: normal normal normal 16px/1 FontAwesome;
+            margin-left: 5px;
+        }
+        
+        .add-arrow:hover {
+            font-size: 25px;
+            transition: 0.5s;
+            cursor: pointer;
+        }
+        
+        #Book-Now:hover {
+            font-size: 25px;
+            border-top: double;
+            border-bottom: double;
+            transition: 0.5s;
+            cursor: pointer;
+            width: 230px;
+            height: 80px;
+        }
+        
+        #see-all-event:hover {
+            font-size: 25px;
+            border-top: double;
+            border-bottom: double;
+            transition: 0.5s;
+            cursor: pointer;
+            width: 230px;
+            height: 80px;
+        }
+        
+        .footer {
+            background-image: url(img/Ft.png);
+            background-repeat: no-repeat;
+            width: 100%;
+            background-size: cover;
+            object-fit: contain;
+            grid-area: footer;
+            color: white
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 400px 1000px;
+            grid-template-rows: 200px 80px;
+            grid-template-areas: "pic shade" "pic copyright";
+            margin-top: 42px;
+            justify-content: center;
+        }
+        
+        div.picture {
+            grid-area: pic;
+            border-left: 1px solid white;
+            display: flex;
+            justify-content: center;
+        }
+        
+        div.shade {
+            grid-area: shade;
+            display: flex;
+            position: relative;
+            border-right: 1px solid white;
+            border-left: 1px solid white;
+            padding-left: 30px;
+            border-bottom: 1px solid white
+        }
+        
+        div.copyright {
+            grid-area: copyright;
+            display: flex;
+            position: relative;
+            border-right: 1px solid white;
+            border-left: 1px solid white;
+            padding-left: 30px;
+        }
+        
+        .trai {
+            width: 150px;
+        }
+        
+        .giua {
+            width: 150px;
+        }
+        
+        .phai2 {
+            position: absolute;
+            right: 30px;
+            text-align: right
+        }
+        
+        .final {
+            right: 30px;
+            position: absolute;
+        }
